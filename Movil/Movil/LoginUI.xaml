@@ -10,15 +10,15 @@
                 <Image Source="LogoBlanco.png"></Image>
             </Frame>
 
-            <Label Text="Iniciar Sesión" HorizontalOptions="Center" FontSize="40" TextColor="#7338F2"></Label>
+            <Label Text="Iniciar Sesión" HorizontalOptions="Center" FontSize="Title" TextColor="#7338F2"></Label>
 
-            <Label Text="Correo" FontSize="25"  TextColor="Gray"></Label>
-            <Entry x:Name="txtEmail"  Placeholder="Ingrese correo" TextColor="Gray" PlaceholderColor="#CDCFCE" BackgroundColor="#EFF2F1"></Entry>
+            <Label Text="Correo" FontSize="20" TextColor="Gray"></Label>
+            <Entry x:Name="txtEmail" Placeholder="Ingrese correo" Keyboard="Email" TextColor="Gray" PlaceholderColor="#CDCFCE" BackgroundColor="#EFF2F1"></Entry>
             
-            <Label Text="Contraseña"  FontSize="25"  TextColor="Gray"></Label>
+            <Label Text="Contraseña" FontSize="20" TextColor="Gray"></Label>
             <Entry x:Name="txtPassword" Placeholder="Ingrese contraseña" IsPassword="True" TextColor="Gray" PlaceholderColor="#CDCFCE" BackgroundColor="#EFF2F1"></Entry>
 
-            <Label HorizontalOptions="End" FontSize="Large" >
+            <Label HorizontalOptions="End" FontSize="Large">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="¿Olvidaste tu contraseña?" TextColor="#A471F6"></Span>

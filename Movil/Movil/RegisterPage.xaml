@@ -1,12 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Movil.RegisterPage">
+             x:Class="Movil.RegisterPage"
+             BackgroundImageSource="fondoMovil.png"
+             BackgroundColor="White">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="REGISTRATE"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="50" HorizontalOptions="FillAndExpand">
+
+            <Frame HeightRequest="120" Padding="70" BorderColor="Transparent">
+                <Image Source="LogoBlanco.png"></Image>
+            </Frame>
+
+            <Label Text="Registrarse" HorizontalOptions="Center" FontSize="Title" TextColor="#7338F2"></Label>
+            
+            <Label Text="Nombre" FontSize="20" TextColor="Gray"></Label>
+            <Entry x:Name="txtName" Placeholder="Ingrese nombre" TextColor="Gray" PlaceholderColor="#CDCFCE" BackgroundColor="#EFF2F1"></Entry>
+
+            <Label Text="Correo" FontSize="20" TextColor="Gray"></Label>
+            <Entry x:Name="txtEmail" Placeholder="Ingrese correo" TextColor="Gray" PlaceholderColor="#CDCFCE" BackgroundColor="#EFF2F1"></Entry>
+
+            <Label Text="Contraseña" FontSize="20" TextColor="Gray"></Label>
+            <Entry x:Name="txtPassword" Placeholder="Ingrese contraseña" IsPassword="True" TextColor="Gray" PlaceholderColor="#CDCFCE" BackgroundColor="#EFF2F1"></Entry>
+
+            <Frame Padding="30" BorderColor="Transparent">
+                <Button
+                    VerticalOptions="Center"
+                    Text="Iniciar Sesión"
+                    TextColor="White"
+                    BackgroundColor="#99A1FF"
+                    BorderColor="#99A1FF"
+                    CornerRadius="18"
+                ></Button>
+            </Frame>
+
+            <Label HorizontalOptions="Center" FontSize="Large">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="¿Ya tienes una cuenta? " TextColor="Gray"></Span>
+                        <Span Text="Iniciar Sesión" TextColor="#A471F6" TextDecorations="Underline"></Span>
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <!--<TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>-->
+                </Label.GestureRecognizers>
+            </Label>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
