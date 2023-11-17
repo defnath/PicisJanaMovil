@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Movil.HomePage"
+             BackgroundImageSource="fondoMovil.png">
+
+    <ContentPage.Content>
+        <StackLayout Padding="50" HorizontalOptions="FillAndExpand">
+
+
+            <Label Text="Tablero" HorizontalOptions="Center" FontSize="Title" TextColor="#7338F2"></Label>
+            
+            <!--<Button
+                HorizontalOptions="End"
+                Text="¿Olvidaste tu contraseña?"
+                TextColor="#A471F6"
+                BackgroundColor="Transparent"
+            ></Button>-->
+
+            <Frame Padding="30" BorderColor="Transparent">
+                <Button
+                    VerticalOptions="Center"
+                    Text="Dashboard"
+                    TextColor="White"
+                    BackgroundColor="#E26F20"
+                    BorderColor="#E26F20"
+                    CornerRadius="18"
+                    Clicked="Button_Home"
+                ></Button>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -2,12 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Movil.RegisterPage"
-             BackgroundImageSource="fondoMovil.png"
-             BackgroundColor="White">
+             BackgroundImageSource="fondoMovil.png">
     <ContentPage.Content>
         <StackLayout Padding="50" HorizontalOptions="FillAndExpand">
 
-            <Frame HeightRequest="120" Padding="70" BorderColor="Transparent">
+            <Frame BackgroundColor="Transparent" HeightRequest="120" Padding="70" BorderColor="Transparent">
                 <Image Source="LogoBlanco.png"></Image>
             </Frame>
 
@@ -25,11 +24,12 @@
             <Frame Padding="30" BorderColor="Transparent">
                 <Button
                     VerticalOptions="Center"
-                    Text="Iniciar Sesión"
+                    Text="Registrarse"
                     TextColor="White"
                     BackgroundColor="#99A1FF"
                     BorderColor="#99A1FF"
                     CornerRadius="18"
+                    Clicked="Button_Login"
                 ></Button>
             </Frame>
 
@@ -41,7 +41,7 @@
                     </FormattedString>
                 </Label.FormattedText>
                 <Label.GestureRecognizers>
-                    <!--<TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>-->
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedLogin"/>
                 </Label.GestureRecognizers>
             </Label>
 

@@ -16,5 +16,14 @@ namespace Movil
         {
             InitializeComponent();
         }
+        private void Button_Login(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new HomePage());
+        }
+
+        private void TapGestureRecognizer_TappedLogin(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new LoginUI());
+        }
     }
 }

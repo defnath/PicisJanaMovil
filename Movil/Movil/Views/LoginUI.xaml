@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Movil.LoginUI"
-             BackgroundColor="White">
+             BackgroundImageSource="fondoMovil.png">
     <ContentPage.Content>
         <StackLayout Padding="50" HorizontalOptions="FillAndExpand">
 
-            <Frame HeightRequest="120" Padding="70" BorderColor="Transparent">
+            <Frame BackgroundColor="Transparent" HeightRequest="120" Padding="70" BorderColor="Transparent">
                 <Image Source="LogoBlanco.png"></Image>
             </Frame>
 
